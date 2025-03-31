@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEMAX-AUTOS | Premium Car Dealership 2025</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="contact-info">
+          <span><i class="fas fa-phone"></i> +(256)705-298-524 </span>
+          <span
+            ><i class="fas fa-envelope"></i>L.allan@lemaxinvestments.co.ug
+          </span>
+          <span
+            ><i class="fas fa-map-marker-alt"></i> naguru road,kampala,uganda
+            256
+          </span>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo-container">
+          <img
+            src="https://th.bing.com/th/id/OIP.mqit4Es4Y2WH2tKMslWE4wHaHa?rs=1&pid=ImgDetMain"
+            alt="LEMAX-AUTOS 2025"
+            class="logo" />
+          <span class="tagline">DRIVING THE FUTURE</span>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#inventory">Inventory</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-slider">
+        <div class="slide active" style="background-image: url('hero1.jpg')">
+          <div class="slide-content">
+            <h1>Premium Selection of 2025 Models</h1>
+            <p>
+              Discover the latest in automotive innovation with our curated
+              collection
+            </p>
+            <a href="#inventory" class="btn">Browse Inventory</a>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('hero2.jpg')">
+          <div class="slide-content">
+            <h1>Financing Options for Everyone</h1>
+            <p>Competitive rates and flexible terms to fit your budget</p>
+            <a href="#services" class="btn">Learn More</a>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('hero3.jpg')">
+          <div class="slide-content">
+            <h1>Trade-In Your Current Vehicle</h1>
+            <p>
+              Get the best value for your trade-in towards your next LAMAX
+              vehicle
+            </p>
+            <a href="#contact" class="btn">Get Valuation</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+        <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="slider-dots"></div>
+    </section>
+
+    <!-- Search Bar -->
+    <section class="search-bar">
+      <div class="container">
+        <h2>Find Your Perfect Vehicle</h2>
+        <form id="vehicle-search">
+          <div class="form-group">
+            <select name="make" id="make">
+              <option value="">All Makes</option>
+              <option value="audi">Audi</option>
+              <option value="bmw">BMW</option>
+              <option value="mercedes">Mercedes-Benz</option>
+              <option value="tesla">Tesla</option>
+              <option value="porsche">Porsche</option>
+              <option value="lexus">Lexus</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select name="model" id="model">
+              <option value="">All Models</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select name="price" id="price">
+              <option value="">Price Range</option>
+              <option value="0-30000">$0 - $30,000</option>
+              <option value="30000-50000">$30,000 - $50,000</option>
+              <option value="50000-80000">$50,000 - $80,000</option>
+              <option value="80000-100000">$80,000 - $100,000</option>
+              <option value="100000+">$100,000+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select name="type" id="type">
+              <option value="">Vehicle Type</option>
+              <option value="sedan">Sedan</option>
+              <option value="suv">SUV</option>
+              <option value="coupe">Coupe</option>
+              <option value="convertible">Convertible</option>
+              <option value="electric">Electric</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Search Vehicles</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Inventory Section -->
+    <section id="inventory" class="inventory">
+      <div class="container">
+        <h2 class="section-title">Featured Inventory</h2>
+        <p class="section-subtitle">
+          Explore our premium selection of vehicles
+        </p>
+
+        <div class="inventory-filter">
+          <button class="filter-btn active" data-filter="all">
+            All Vehicles
+          </button>
+          <button class="filter-btn" data-filter="new">New Arrivals</button>
+          <button class="filter-btn" data-filter="used">Pre-Owned</button>
+          <button class="filter-btn" data-filter="electric">Electric</button>
+          <button class="filter-btn" data-filter="luxury">Luxury</button>
+        </div>
+
+        <div class="inventory-grid">
+          <!-- Vehicle items will be loaded here via JavaScript -->
+        </div>
+
+        <div class="view-all">
+          <a href="#" class="btn btn-outline">View Full Inventory</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">Comprehensive automotive solutions</p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-car"></i>
+            </div>
+            <h3>Vehicle Sales</h3>
+            <p>
+              Extensive selection of new and pre-owned vehicles from top
+              manufacturers.
+            </p>
+            <a href="#" class="read-more"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <h3>Financing</h3>
+            <p>
+              Competitive financing options with flexible terms to suit your
+              budget.
+            </p>
+            <a href="#" class="read-more"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <h3>Trade-Ins</h3>
+            <p>
+              Get the best value for your current vehicle when you trade it in
+              with us.
+            </p>
+            <a href="#" class="read-more"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Service Center</h3>
+            <p>
+              State-of-the-art service center with factory-trained technicians.
+            </p>
+            <a href="#" class="read-more"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Warranty</h3>
+            <p>
+              Comprehensive warranty options for peace of mind on your purchase.
+            </p>
+            <a href="#" class="read-more"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-charging-station"></i>
+            </div>
+            <h3>EV Solutions</h3>
+            <p>
+              Complete electric vehicle support including home charging
+              installation.
+            </p>
+            <a href="#" class="read-more"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <h2 class="section-title">About LEMAX-AUTOS</h2>
+          <p class="section-subtitle">
+            Premium automotive experience since 2010
+          </p>
+
+          <p>
+            Founded in 2010, LAMAX-AUTOS has established itself as a premier
+            destination for discerning automotive enthusiasts. Our commitment to
+            excellence, transparency, and customer satisfaction has earned us
+            numerous industry awards and a loyal clientele.
+          </p>
+
+          <p>
+            In 2025, we're proud to introduce our new brand identity, reflecting
+            our forward-thinking approach to automotive retail while maintaining
+            the core values that have defined us for over a decade.
+          </p>
+
+          <div class="stats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="15000">0</span>
+              <span class="stat-label">Vehicles Sold</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="98">0</span>
+              <span class="stat-label">Customer Satisfaction</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="25">0</span>
+              <span class="stat-label">Brands Available</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="15">0</span>
+              <span class="stat-label">Years in Business</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn">Our Story</a>
+        </div>
+
+        <div class="about-image">
+          <img src="about-image.jpg" alt="LAMAX-AUTOS Dealership" />
+          <div class="experience-badge">
+            <span>15</span>
+            <span>Years of Excellence</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Customer Testimonials</h2>
+        <p class="section-subtitle">What our clients say about us</p>
+
+        <div class="testimonial-slider">
+          <div class="testimonial active">
+            <div class="testimonial-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "The team at LEMAX-AUTOS made my car buying experience seamless.
+                Their knowledge of electric vehicles helped me find the perfect
+                model for my needs, and their financing options were
+                unbeatable."
+              </p>
+              <div class="client-info">
+                <img src="client1.jpg" alt="Michael Johnson" />
+                <div>
+                  <h4>Michael Johnson</h4>
+                  <span>2025 Tesla Model S Owner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "I've purchased three vehicles from LEMAX over the years, and
+                each experience has been exceptional. Their attention to detail
+                and commitment to customer service keeps me coming back."
+              </p>
+              <div class="client-info">
+                <img src="client2.jpg" alt="Sarah Williams" />
+                <div>
+                  <h4>Sarah Williams</h4>
+                  <span>2024 Porsche Taycan Owner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>
+                "As a first-time luxury car buyer, I was nervous about the
+                process. The team at LEMAX walked me through every step and
+                found me the perfect BMW at a great price. Highly recommend!"
+              </p>
+              <div class="client-info">
+                <img src="client3.jpg" alt="David Chen" />
+                <div>
+                  <h4>David Chen</h4>
+                  <span>2025 BMW i7 Owner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-controls">
+          <button class="prev-testimonial">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="next-testimonial">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-info">
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-subtitle">We're here to help</p>
+
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Visit Us</h3>
+              <p>Naguru road<br />Kampala, Uganda 256</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Call Us</h3>
+              <p>Sales: (+256)705-298-524<br />Service: (+256)705-298-524</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email Us</h3>
+              <p>sales@lemax-autos.com<br />support@lemax-autos.com</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h3>Hours</h3>
+              <p>Mon-Fri: 9am - 8pm<br />Sat: 9am - 6pm<br />Sun: 11am - 5pm</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required />
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" placeholder="Your Phone" />
+            </div>
+            <div class="form-group">
+              <select id="subject" required>
+                <option value="">Select Subject</option>
+                <option value="sales">Vehicle Sales</option>
+                <option value="service">Service Appointment</option>
+                <option value="finance">Financing Inquiry</option>
+                <option value="trade">Trade-In Valuation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                placeholder="Your Message"
+                rows="5"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Stay Updated</h2>
+          <p>
+            Subscribe to our newsletter for the latest arrivals, special offers,
+            and automotive news.
+          </p>
+        </div>
+        <form id="newsletterForm">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <img
+              src="https://th.bing.com/th/id/OIP.mqit4Es4Y2WH2tKMslWE4wHaHa?rs=1&pid=ImgDetMain"
+              alt="LEMAX-AUTOS 2025"
+              class="footer-logo" />
+            <p>
+              Premium automotive retail experience with a focus on customer
+              satisfaction and cutting-edge vehicles.
+            </p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#inventory">Inventory</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">New Vehicles</a></li>
+              <li><a href="#">Pre-Owned Vehicles</a></li>
+              <li><a href="#">Financing</a></li>
+              <li><a href="#">Trade-In</a></li>
+              <li><a href="#">Service Center</a></li>
+              <li><a href="#">Parts</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Contact Info</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Naguru road, Kampala,
+                Uganda 256
+              </li>
+              <li><i class="fas fa-phone"></i> (+256)705-298-524</li>
+              <li>
+                <i class="fas fa-envelope"></i> L.allan@lemaxinvestments.co.ug
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 LEMAX-AUTOS. All Rights Reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
